@@ -13,7 +13,6 @@ char buffer[50];
 sprintf(buffer, "%d", x);
 	return (write(1, buffer, strlen(buffer)));
 }
-#include <unistd.h>
 /**
 *_putchar - Print a character
 *
