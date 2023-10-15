@@ -13,3 +13,15 @@ char buffer[50];
 sprintf(buffer, "%d", x);
 	return (write(1, buffer, strlen(buffer)));
 }
+#include <unistd.h>
+/**
+*_putchar - Print a character
+*
+* @x: charachter to be checked
+*
+*Return: one character
+*/
+int _putchar(char x)
+{
+	return (write(1, &x, 1));
+}
