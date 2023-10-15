@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 va_list cat;
 char spec[2];
 int count = 0, i;
-func cat[] = {
+func kitty[] = {
 {"c", printchar},
 {"s", printstring},
 {"i", printinteger},

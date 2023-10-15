@@ -11,11 +11,11 @@
 int _print_specifier(char *func, va_list cat)
 {
 int i = 0, count = 0;
-	while (spec[i].spec != NULL)
+	while (kitty[i].s != NULL)
 {
-		if (strcmp(func, spec[i].spec) == 0)
+		if (strcmp(func, kitty[i].s) == 0)
 {
-		count += spec[i].f(cat);
+		count += kitty[i].f(cat);
 }
 	i++;
 }
