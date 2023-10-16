@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
 *printhexa - function that brint the numbers in lowercase hexa
 *
