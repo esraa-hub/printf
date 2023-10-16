@@ -17,7 +17,11 @@ func kitty[] = {
 {"i", printinteger},
 {"d", printinteger},
 {"b", printbinary},
-{"S",printnonchar},
+{"S", printnonchar},
+{"u", printunsigned},
+{"o", printocta},
+{"x", printhexa},
+{"X", pRINTHEXA},
 {NULL, NULL}
 };
 va_start(cat, format);
