@@ -17,7 +17,7 @@ func kitty[] = {
 {"i", printinteger},
 {"d", printinteger},
 {"b", printbinary},
-{"S", printnonchar},
+{"S", nonchar},
 {"u", printunsigned},
 {"o", printocta},
 {"x", printhexa},
