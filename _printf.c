@@ -1,16 +1,16 @@
 #include "main.h"
 /**
-*_printf - function which print out the parameters
+*_print_specifier - function to print what follow %
 *
-*@format: pointer to the format we will print
+*@s: argument which declare what function we will use
 *
-*Return: the count of the input execlude the null
+*@cat: the other arguments
+*
+*Return: the count of the bytes.
 */
-int _printf(const char *format, ...)
+int _print_specifier(char *s, va_list cat)
 {
-va_list cat;
-char spec[2];
-int count = 0, i;
+int j = 0, i = 0, count = 0;
 func kitty[] = {
 {"c", printchar},
 {"s", printstring},
@@ -24,6 +24,32 @@ func kitty[] = {
 {"X", pRINTHEXA},
 {NULL, NULL}
 };
+	while (kitty[i].s != NULL)
+{
+		while (kitty[i].s != NULL && s[j] != '\0')
+{
+			if (s[j] != kitty[i].s[j])
+				break;
+			j++;
+}
+		if (s[j] == '\0' && kitty[i].s[j] == '\0')
+			count += kitty[i].f(cat);
+	i++;
+}
+	return (count);
+}
+/**
+*_printf - function which print out the parameters
+*
+*@format: pointer to the format we will print
+*
+*Return: the count of the input execlude the null
+*/
+int _printf(const char *format, ...)
+{
+va_list cat;
+char spec[2];
+int count = 0, i;
 va_start(cat, format);
 	for (i = 0; format[i] != '\0'; i++)
 {
