@@ -10,7 +10,7 @@
 */
 int _print_specifier(char *s, va_list cat)
 {
-int j = 0, i = 0, count = 0;
+int i = 0, count = 0;
 func kitty[] = {
 {"c", printchar},
 {"s", printstring},
@@ -28,17 +28,12 @@ func kitty[] = {
 };
 	while (kitty[i].s != NULL)
 {
-		while (kitty[i].s != NULL && s[j] != '\0')
+		if (strcmp(s, kitty[i].s) == 0)
 {
-			if (s[j] != kitty[i].s[j])
-				break;
-			j++;
+		count += kitty[i].f(cat);
 }
-		if (s[j] == '\0' && kitty[i].s[j] == '\0')
-			count += kitty[i].f(cat);
 	i++;
 }
-	va_end(cat);
 	return (count);
 }
 /**
