@@ -26,5 +26,6 @@ int i, count = 0;
 {
 		count += _putchar(s[i]);
 }
+	va_end(cat);
 	return (count);
 }

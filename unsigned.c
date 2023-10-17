@@ -26,5 +26,6 @@ s = va_arg(cat, unsigned int);
 		BUFFER[z--] = '0' + (s % 10);
 		s /= 10;
 }
+	va_end(cat);
 	return (write(1, BUFFER, count));
 }

@@ -15,11 +15,12 @@ int revers_it(va_list cat)
 
 	printed_string = va_arg(cat, char*);
 	if (printed_string == NULL)
-		counter = "(null)";
+		printed_string = "(null)";
 	for (leng = 0; printed_string[leng] != '\0'; leng++)
 		;
 	for (i = leng - 1; printed_string[i] != '\0'; i--)
 		counter += _putchar(printed_string[i]);
+	va_end(cat);
 	return (counter);
 
 }

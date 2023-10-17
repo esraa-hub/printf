@@ -19,7 +19,7 @@ int nonchar(va_list cat)
 	}
 	for (i = 0; nonchar[i] != '\0'; i++)
 	{
-		if (nonchar[i] < 32 || nonchar[i] > 127)
+		if (nonchar[i] < 32 || nonchar[i] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');
@@ -29,8 +29,8 @@ int nonchar(va_list cat)
 				_putchar('0');
 				counter++;
 			}
-			counter += print_uhex_num(nonchar[i]);
-		}
+			counter += _putchar(nonchar[i]);
 	}
+}
 	return (counter);
 }

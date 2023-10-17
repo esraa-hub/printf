@@ -24,5 +24,6 @@ z = s % 16;
 }
 	for (j = i - 1; j >= 0; j--)
 		count += _putchar(BUFFER[j]);
+	va_end(cat);
 	return (count);
 }

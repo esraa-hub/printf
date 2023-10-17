@@ -26,5 +26,6 @@ y = s;
 		BUFFER[z] = '0' + (s % 8);
 		s /= 8;
 }
+	va_end(cat);
 	return (write(1, BUFFER, count));
 }

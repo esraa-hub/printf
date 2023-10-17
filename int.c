@@ -30,6 +30,7 @@ y = x;
 		BUFFER[z] = '0' + (x % 10);
 		x /= 10;
 }
+	va_end(cat);
 	return (write(1, BUFFER, count));
 }
 /**

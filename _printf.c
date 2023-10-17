@@ -38,6 +38,7 @@ func kitty[] = {
 			count += kitty[i].f(cat);
 	i++;
 }
+	va_end(cat);
 	return (count);
 }
 /**

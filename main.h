@@ -33,4 +33,6 @@ int pRINTHEXA(va_list cat);
 int printhexa(va_list cat);
 int printocta(va_list cat);
 int printunsigned (va_list cat);
+int rotthirteen(va_list cat);
+int nonchar(va_list cat);
 #endif

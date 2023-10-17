@@ -23,6 +23,7 @@ char BUFFER[50];
 	s /= 16;
 }
 	for (j = i - 1; j >= 0; j--)
-	count += _putchar(BUFFER[j]);
+		count += _putchar(BUFFER[j]);
+	va_end(cat);
 	return (count);
 }

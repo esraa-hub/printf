@@ -8,10 +8,10 @@
  */
 int rotthirteen(va_list cat)
 {
-	int counter, i, leng;
-	char *shifted_char;
+	int counter = 0, i;
+	char *shifted_list;
 
-	shifted_list = va_arg(cap, char*);
+	shifted_list = va_arg(cat, char*);
 	for (i = 0; shifted_list[i] != '\0'; i++)
 	{
 		if (shifted_list[i] >= 'a' && shifted_list[i] <= 'z')
@@ -35,5 +35,6 @@ int rotthirteen(va_list cat)
 		 * }
 		 */
 	}
+	va_end(cat);
 	return (counter);
 }
