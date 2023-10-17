@@ -28,15 +28,8 @@ int _printf(const char *format, ...);
 int _putchar(char x);
 int _print_specifier(char *s, va_list cat);
 int revers_it(va_list cat);
-<<<<<<< HEAD
-int printunsigned (va_list cat);
-int printocta(va_list cat);
-int printhexa(va_list cat);
-int pRINTHEXA(va_list cat);
-=======
 int pRINTHEXA(va_list cat);
 int printhexa(va_list cat);
 int printocta(va_list cat);
 int printunsigned (va_list cat);
->>>>>>> main
 #endif
