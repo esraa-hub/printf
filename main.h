@@ -1,16 +1,23 @@
-#ifndef _PRINTF_H
-#define _PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
 #include <stdlid.h>
-#include <limits.h>
 #include <stdio.h>
 #include <unistd.h>
 
 #define NULL_STRING ("null")
-typedef struct function {
-    char *s;
-    int (*f)(va_list);
+/**
+*struct function - struct contain string and function
+*
+*@s: pointer as a first member
+*
+*@f: function as a seconed member
+*/
+typedef struct function
+{
+char *s;
+int (*f)(va_list);
 } func;
 int printbinary_rec(unsigned int n);
 int printbinary(va_list cat);
@@ -26,4 +33,3 @@ int printocta(va_list cat);
 int printhexa(va_list cat);
 int pRINTHEXA(va_list cat);
 #endif
-
