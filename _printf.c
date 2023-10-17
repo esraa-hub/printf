@@ -24,6 +24,7 @@ func kitty[] = {
 {"X", pRINTHEXA},
 {"r", revers_it},
 {"R", rotthirteen},
+{"%", printpercent},
 {NULL, NULL}
 };
 	while (kitty[i].s != NULL)

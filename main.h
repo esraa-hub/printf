@@ -22,6 +22,7 @@ int (*f)(va_list);
 } func;
 int printbinary_rec(unsigned int n);
 int printbinary(va_list cat);
+int printpercent(va_list cat);
 int printchar(va_list cat);
 int printstring(va_list cat);
 int printinteger(va_list cat);

@@ -31,3 +31,15 @@ int count = 0;
 count = printbinary_rec(n);
 	return (count);
 }
+/**
+*printpercent - function to print %
+*
+*@cat: void argument
+*
+*Return: %
+*/
+int printpercent(va_list cat)
+{
+(void) cat;
+	return (_putchar('%'));
+}
