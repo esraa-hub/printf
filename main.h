@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <string.h>
 #define NULL_STRING ("null")
+#define BUFFER_cat 1024
 /**
 *struct function - struct contain string and function
 *

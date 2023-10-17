@@ -22,6 +22,8 @@ func kitty[] = {
 {"o", printocta},
 {"x", printhexa},
 {"X", pRINTHEXA},
+{"r", revers_it},
+{"R", rotthirteen},
 {NULL, NULL}
 };
 	while (kitty[i].s != NULL)
