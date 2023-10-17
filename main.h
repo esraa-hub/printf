@@ -27,8 +27,5 @@ int printinteger(va_list cat);
 int _printf(const char *format, ...);
 int _putchar(char x);
 int _print_specifier(char *func, va_list cat);
-int printunsigned (va_list cat);
-int printocta(va_list cat);
-int printhexa(va_list cat);
-int pRINTHEXA(va_list cat);
+int revers_it(va_list cat);
 #endif
