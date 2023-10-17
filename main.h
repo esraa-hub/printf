@@ -20,5 +20,6 @@ int printinteger(va_list cat);
 int _printf(const char *format, ...);
 int _putchar(char x);
 int _print_specifier(char *func, va_list cat);
+int revers_it(va_list cat);
 #endif
 
